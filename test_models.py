@@ -12,19 +12,7 @@ class TestColorLamp(unittest.TestCase):
 
 class TestLampArray(unittest.TestCase):
     def setUp(self):
-        self.lamp = LampArray()
-    
-    def test_list_on(self):
-        self.lamp.add_lamp()
-        self.lamp.add_lamp()
-        self.lamp.set_on()
-        self.assertTrue(self.lamp.check_on())
-
-    def test_list_off(self):
-        self.lamp.add_lamp()
-        self.lamp.add_lamp()
-        self.lamp.set_off()
-        self.assertTrue(self.lamp.check_off())
+        pass
 
 
 
