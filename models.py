@@ -12,8 +12,8 @@ class Lamp:
         self.state = False
 
 class ColorLamp(Lamp):
-    def __init__(self):
-        self.color = 'black'
+    def __init__(self, color):
+        self.color = color
 
     def set_color(self, color):
         self.color = color
@@ -21,7 +21,7 @@ class ColorLamp(Lamp):
     def get_color(self):
         return self.color
 
-class LampArray(ColorLamp):
+class LampArray():
     def __init__(self):
         self.lamp_list = []
 
