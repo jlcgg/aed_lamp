@@ -13,17 +13,21 @@ if __name__ == "__main__":
         if commands[0] == "CL":
             # Create simple lamp with ID
             lamp_id = commands[1]
+            controller.create_lamp(lamp_id)
         elif commands[0] == "CCL":
             # Create color lamp with ID
             lamp_color = commands[1]
             lamp_id = commands[2]
+            controller.create_colorLamp(lamp_id, lamp_color)
         elif commands[0] == "CLA": 
             # Create an empty lamp array with ID
             lamp_id = commands[1]
+            controller.create_lampArray(lamp_id)
         elif commands[0] == "ALA":
             # Add lamp to array
             lamp_id = commands[1]
             lamp_array_id = commands[2]
+            controller.add_lamp(lamp_id, lamp_array_id)
         elif commands[0] == "RLA":
             # Remove lamp from array
             lamp_id = commands[1]
